@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+
+{% block main %}
+    <div class="text-center">
+        <img alt="{{ top }}" src="{{ url_for('static', filename='New_Courage.webp') }}"
+             class="img-fluid mb-3" style="max-width: 300px; background: transparent;" title="{{ top }}">
+        <h1 class="text-danger">{{ top }}</h1>
+        <p class="lead">{{ bottom }}</p>
+    </div>
+{% endblock %}
+

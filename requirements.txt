@@ -1,0 +1,8 @@
+Flask==2.3.2
+Flask-SQLAlchemy==3.1.1
+Werkzeug==2.3.7
+requests==2.31.0
+dotenv~=0.9.9
+python-dotenv~=1.1.0
+alembic~=1.15.2
+SQLAlchemy~=2.0.40

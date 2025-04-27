@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add a Movie
+{% endblock %}
+
+{% block main %}
+<h2 class="mb-4">Search and Add a Movie</h2>
+
+<form method="POST" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="search" class="form-control" placeholder="Search for a movie..." required>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+{% if movies is not none %}
+    {% if movies %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            {% for movie in movies %}
+            <div class="col">
+                <div class="card h-100">
+                    <img src="{{ movie.poster }}" class="card-img-top" alt="{{ movie.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ movie.title }}</h5>
+                        <p class="card-text"><strong>Type:</strong> {{ movie.type }}</p>
+                        <form method="POST" action="{{ url_for('add_show') }}">
+                            <input type="hidden" name="title" value="{{ movie.title }}">
+                            <input type="hidden" name="poster" value="{{ movie.poster }}">
+                            <input type="hidden" name="type" value="{{ movie.type }}">
+
+                            <div class="mb-2">
+                                <select name="status" class="form-select" required>
+                                    <option disabled  value="">Select status</option>
+                                    <option value="To Watch">To Watch</option>
+                                    <option value="Watched">Watched</option>
+                                    <option value="Currently Watching">Currently Watching</option>
+                                </select>
+                            </div>
+                            <div class="mb-2">
+                                <textarea name="review" class="form-control" placeholder="Leave a review (optional)"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Add to Watchlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-muted mt-4">No results found for your search.</p>
+    {% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,48 @@
+/* Basic Light Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text for readability */
+}
+
+.navbar {
+    background-color: #ffffff; /* White background for navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.navbar a.navbar-brand {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ffffff; /* White background for footer */
+    color: #555; /* Dark gray text */
+    padding: 15px;
+}
+
+footer form input[type="image"] {
+    border: none;
+    height: 40px;
+}
+
+.alert-info {
+    background-color: #e3f2fd; /* Light blue background for alert */
+    border-color: #bbdefb;
+}
+
+.container {
+    max-width: 1140px; /* Increased max-width for spacious feel */
+    margin: 0 auto;
+}
+img {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.mb-3 {
+    display: flex;
+
+  justify-content: center;
+}
