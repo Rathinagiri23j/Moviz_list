@@ -1,6 +1,6 @@
 # Moviz List:
 
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://www.youtube.com/watch?v=k3APHhsfnhw
 
 #### Description:
 
@@ -87,7 +87,6 @@ Not over-engineer (no unnecessary backend complexity)
 
 Keep templates minimalistic but structured
 
-Avoid JavaScript unless absolutely needed (not needed for MVP)
 
 Stick to server-side rendering (Jinja) rather than making it a full SPA (Single Page Application)
 
