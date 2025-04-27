@@ -1,12 +1,12 @@
-/* Basic Light Theme */
+/* Basic Light theme styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333; /* Dark text for readability */
+    background-color: #f9f9f9; /* Light gray background implemented */
+    color: #333; /* Dark text for easy reading */
 }
 
 .navbar {
-    background-color: #ffffff; /* White background for navbar */
+    background-color: #ffffff; /* White background for nav b */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
